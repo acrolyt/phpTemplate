@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# script/bootstrap: Launch a console for the application. Optionally allow an
+#                   environment to be passed in to let the script handle the
+#                   specific requirements for connecting to a console for that
+#                   environment.
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+docker run \
+    --entrypoint /usr/local/bin/entrypoint-suexec.sh \
+    --interactive \
+    --rm \
+    --tty \
+    --volume "$(pwd)":/app \
+    --workdir /app \
+    dreadlabs/php-lib:7.0-dev \
+    /bin/bash
