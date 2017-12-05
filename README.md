@@ -7,7 +7,8 @@
 
 ## Setup
 
-  - git clone this repository
+  - fork this repository into your private GitLab space
+  - git clone that repository
   - run `script/bootstrap`
   - open project in PhpStorm
   - run "Unit tests" from Run configurations
