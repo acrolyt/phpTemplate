@@ -11,6 +11,6 @@
         "psr-4": { "Postcon\\PhpKatas\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Postcon\\PhpKatas\\Tests\\": "tests/Unit/" }
+        "psr-4": { "Postcon\\PhpKatas\\Tests\\": "tests/" }
     }
 }
