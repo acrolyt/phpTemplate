@@ -91,9 +91,13 @@ class GameTest extends TestCase
         $this->expectOutputString($this->output->getLog());
     }
 
+    /**
+     *
+     */
     protected function setUp()
     {
         $this->goldenGame = new Game();
+
         $this->output = new TestOutput();
         $this->newGame = new NewGame($this->output);
     }

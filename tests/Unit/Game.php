@@ -1,4 +1,5 @@
 <?php
+
 namespace Postcon\PhpKatas\Tests\Unit;
 
 function echoln($string)

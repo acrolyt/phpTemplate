@@ -15,6 +15,7 @@ if [ -f composer.json ]; then
         --workdir /app \
         dreadlabs/php-lib:7.0-dev \
         composer install --prefer-dist --optimize-autoloader --no-interaction
+        composer global require hirak/prestissimo
 else
     echo "==> No composer.json found in root directory. Please initialize the project."
 fi
