@@ -1,12 +1,12 @@
 <?php
 
-use Postcon\PhpKatas\Game;
+include __DIR__ . '/../vendor/autoload.php';
 
-include __DIR__ . '/../src/Game.php';
+use Postcon\PhpKatas\Game;
 
 $notAWinner;
 
-$aGame = new Game();
+$aGame = new Game(new \Postcon\PhpKatas\CliOutput());
 
 $aGame->add("Chet");
 $aGame->add("Pat");
