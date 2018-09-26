@@ -1,16 +1,21 @@
 {
-    "name": "postcon/php-katas",
-    "description": "Code Katas for PHP",
+    "name": "Laravel Boilerplate",
+    "description": "Laravel Boilerplate",
     "type": "project",
+    "require": {
+        "laravel/laravel": "^5.6"
+    },
     "require-dev": {
-        "phpunit/phpunit": "~6.0"
+        "phpunit/phpunit": "~7.0",
+        "codeception/codeception": "^2.5"
+
     },
     "license": "proprietary",
     "minimum-stability": "stable",
     "autoload": {
-        "psr-4": { "Postcon\\PhpKatas\\": "src/" }
+        "psr-4": { "Maisfeld\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Postcon\\PhpKatas\\Tests\\": "tests/" }
+        "psr-4": { "Maisfeld\\Tests\\": "tests/" }
     }
 }
